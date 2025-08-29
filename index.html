@@ -20,22 +20,22 @@
   <!-- Right: Heart Icon, Coin Count, Copy Count -->
   <div class="flex items-center space-x-4">
     <!-- Heart Icon -->
-    <button class="text-black-500 font-bold flex gap-2 rounded-2xl  bg-[#41ff6b1a] px-3 py-1 rounded">0
+    <button id="heart-count-btn"  class="text-black-500 font-bold flex gap-2 rounded-2xl  bg-[#41ff6b1a] px-3 py-1 rounded"><span id="heart-count" class="text-black font-bold">0</span>
       <img src="./B12-A5-Emergency-Hotline/assets/heart.png" class="h-6 w-6" alt="">
     </button>
 
     <!-- Coin Count -->
     <button class="bg-[#41ff6b1a] px-3 py-1 rounded-2xl">
         <div class="flex items-center space-x-1">
-        <span class="text-gray-700 font-bold">100</span>
+        <span id="coin-count" class="text-gray-700 font-bold">100</span>
       <span class="text-yellow-500  "><img src="./B12-A5-Emergency-Hotline/assets/coin.png" alt="" class="h-6 w-6"></span>
       
     </div>
     </button>
 
     <!-- Copy Count -->
-    <button class="rounded-2xl bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600">
-      2 Copy
+    <button id="copy-count-btn" class="rounded-2xl bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600">
+      <span id="copy-count">0</span> Copy
     </button>
   </div>
 </nav>
@@ -70,7 +70,10 @@
 
     <!-- Emergency Icon/Image -->
     <img src="./B12-A5-Emergency-Hotline/assets/emergency.png" alt="Emergency Icon" class="w-10 h-10 bg-red-200 p-2 rounded-lg" />
-    <i class="fa-regular fa-heart"></i>
+
+<button class="heart-btn">
+        <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
+      </button>
     </div>
 
     <!-- Text Info -->
@@ -84,7 +87,7 @@
       <h3 class="text-lg font-semibold text-gray-800">National Emergency Number</h3>
       <p class="text-sm text-gray-500">National Emergency</p>
     </div>
-    <p class="text-2xl font-bold text-black-600">999</p>
+    <p class="hotline-number text-2xl font-bold text-black-600">999</p>
   </div>
 
   <!-- Category Badge -->
@@ -94,11 +97,11 @@
 
   <!-- Buttons -->
   <div class="flex justify-between items-center px-4 py-3 border-t border-gray-100">
-    <button class="flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
+    <button class="copy-btn flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
-    <button class="flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
+    <button class="call-btn flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
       <i class="fa-solid fa-phone"></i>
       <span>Call</span>
     </button>
@@ -113,7 +116,8 @@
 
     <!-- Emergency Icon/Image -->
     <img src="./B12-A5-Emergency-Hotline/assets/police.png" alt="Emergency Icon" class="w-10 h-10 bg-red-200 p-2 rounded-lg" />
-    <i class="fa-regular fa-heart"></i>
+    <button class="heart-btn">
+        <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
     <!-- Text Info -->
@@ -127,7 +131,7 @@
       <h3 class="text-lg font-semibold text-gray-800">Police Helpline Number</h3>
       <p class="text-sm text-gray-500">Police</p>
     </div>
-    <p class="text-2xl font-bold text-black-600">999</p>
+    <p class="hotline-number text-2xl font-bold text-black-600">999</p>
   </div>
 
   <!-- Category Badge -->
@@ -137,7 +141,7 @@
 
   <!-- Buttons -->
   <div class="flex justify-between items-center px-4 py-3 border-t border-gray-100">
-    <button class="flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
+    <button class="copy-btn flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
@@ -156,7 +160,8 @@
 
     <!-- Emergency Icon/Image -->
     <img src="./B12-A5-Emergency-Hotline/assets/fire-service.png" alt="Emergency Icon" class="w-10 h-10 bg-red-200 p-2 rounded-lg" />
-    <i class="fa-regular fa-heart"></i>
+    <button class="heart-btn">
+        <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
     <!-- Text Info -->
@@ -170,7 +175,7 @@
       <h3 class="text-lg font-semibold text-gray-800">Fire Service Number</h3>
       <p class="text-sm text-gray-500">Fire Service</p>
     </div>
-    <p class="text-2xl font-bold text-black-600">999</p>
+    <p class="hotline-number text-2xl font-bold text-black-600">999</p>
   </div>
 
   <!-- Category Badge -->
@@ -180,7 +185,7 @@
 
   <!-- Buttons -->
   <div class="flex justify-between items-center px-4 py-3 border-t border-gray-100">
-    <button class="flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
+    <button class="copy-btn flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
@@ -195,7 +200,7 @@
   <!-- Header Row -->
   <div class="flex items-center justify-between mb-4">
     <!-- Title with Icon -->
-    <div class="flex items-center space-x-2">
+    <div  class="flex items-center space-x-2">
       <i class="fa-solid fa-clock"></i>
       <h2 class="text-lg font-semibold text-gray-800">Call History</h2>
     </div>
@@ -208,17 +213,16 @@
 </section>
 <section class="mt-2 bg-white w-full p-4 shadow-md rounded-md max-w-sm mx-auto">
   <!-- History Items (Add dynamically below this) -->
-  <div class="text-gray-700 text-sm">
-    <!-- Example Entry -->
-    <div class="flex justify-between items-center py-2">
-      <div>
-        <p class="font-medium">Fire Service Number</p>
-        <p class="text-xs text-gray-500">999</p>
-      </div>
-      <div><p class="text-xs text-gray-500">11:36:58 AM</p></div>
-    
-    </div>
+  <div class="flex justify-between items-center py-2">
+  <div id="call-history">
+    <p class="font-medium">serviceName</p>
+    <p id="history-list" class="text-xs text-gray-500">serviceNumber</p>
   </div>
+  <div>
+    <p class="text-xs text-gray-500">time</p>
+  </div>
+</div>
+
 </section>
 </div>
      <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
@@ -230,7 +234,8 @@
 
     <!-- Emergency Icon/Image -->
     <img src="./B12-A5-Emergency-Hotline/assets/ambulance.png" alt="Emergency Icon" class="w-10 h-10 bg-red-200 p-2 rounded-lg" />
-    <i class="fa-regular fa-heart"></i>
+    <button class="heart-btn">
+        <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
     <!-- Text Info -->
@@ -244,7 +249,7 @@
       <h3 class="text-lg font-semibold text-gray-800">Ambulance Service</h3>
       <p class="text-sm text-gray-500">Ambulance</p>
     </div>
-    <p class="text-2xl font-bold text-black-600">1994-999999</p>
+    <p class="hotline-number text-2xl font-bold text-black-600">1994-999999</p>
   </div>
 
   <!-- Category Badge -->
@@ -254,7 +259,7 @@
 
   <!-- Buttons -->
   <div class="flex justify-between items-center px-4 py-3 border-t border-gray-100">
-    <button class="flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
+    <button class="copy-btn flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
@@ -273,7 +278,8 @@
 
     <!-- Emergency Icon/Image -->
     <img src="./B12-A5-Emergency-Hotline/assets/emergency.png" alt="Emergency Icon" class="w-10 h-10 bg-red-200 p-2 rounded-lg" />
-    <i class="fa-regular fa-heart"></i>
+    <button class="heart-btn">
+        <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
     <!-- Text Info -->
@@ -287,7 +293,7 @@
       <h3 class="text-lg font-semibold text-gray-800">Women & Child Helpline</h3>
       <p class="text-sm text-gray-500">Women & Child Helpline</p>
     </div>
-    <p class="text-2xl font-bold text-black-600">109</p>
+    <p class="hotline-number text-2xl font-bold text-black-600">109</p>
   </div>
 
   <!-- Category Badge -->
@@ -297,7 +303,7 @@
 
   <!-- Buttons -->
   <div class="flex justify-between items-center px-4 py-3 border-t border-gray-100">
-    <button class="flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
+    <button class="copy-btn flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
@@ -316,7 +322,8 @@
 
     <!-- Emergency Icon/Image -->
     <img src="./B12-A5-Emergency-Hotline/assets/emergency.png" alt="Emergency Icon" class="w-10 h-10 bg-red-200 p-2 rounded-lg" />
-    <i class="fa-regular fa-heart"></i>
+    <button class="heart-btn">
+        <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
     <!-- Text Info -->
@@ -330,7 +337,7 @@
       <h3 class="text-lg font-semibold text-gray-800">Anti-Corruption Helpline</h3>
       <p class="text-sm text-gray-500">National Emergency</p>
     </div>
-    <p class="text-2xl font-bold text-black-600">106</p>
+    <p class="hotline-number text-2xl font-bold text-black-600">106</p>
   </div>
 
   <!-- Category Badge -->
@@ -340,7 +347,7 @@
 
   <!-- Buttons -->
   <div class="flex justify-between items-center px-4 py-3 border-t border-gray-100">
-    <button class="flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
+    <button class="copy-btn flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
@@ -353,8 +360,105 @@
 
 
 </section>
+<!-- heart count -->
+<script>
+  // Get the heart count display
+  const heartCountDisplay = document.getElementById('heart-count');
+
+  // Get all heart buttons
+  const heartButtons = document.querySelectorAll('.heart-btn');
+
+  let heartCount = 0;
+
+  heartButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      heartCount++;
+      heartCountDisplay.textContent = heartCount;
+
+      // Mark as liked
+      btn.classList.add('liked');
+
+      // Optional: change icon style
+      const icon = btn.querySelector('i');
+      icon.classList.remove('fa-regular');
+      icon.classList.add('fa-solid', 'text-pink-500');
+    });
+  });
+</script>
+
+<!-- call and coin count  -->
+<script>
+  const coinDisplay = document.getElementById('coin-count');
+  const callButtons = document.querySelectorAll('.call-btn');
+  const historyList = document.getElementById('history-list');
+
+  let coins = parseInt(coinDisplay.textContent);
+
+  callButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Get service info from the card
+      const card = button.closest('.max-w-sm');
+      const serviceName = card.querySelector('h3').textContent;
+      const serviceNumber = card.querySelector('p.text-2xl').textContent;
+
+      // Check coin balance
+      if (coins < 20) {
+        alert("You don't have enough coins to make a call.");
+        return;
+      }
+
+      // Deduct coins and update display
+      coins -= 20;
+      coinDisplay.textContent = coins;
+
+      // Show alert
+      alert(`Calling ${serviceName} at ${serviceNumber}`);
+
+      // Add to call history
+      const time = new Date().toLocaleTimeString();
+      const entry = document.createElement('li');
+      entry.textContent = `${serviceName} (${serviceNumber}) at ${time}`;
+      historyList.prepend(entry);
+    });
+  });
+</script>
+
+
+
+<!-- call history clear  -->
+
+<!-- copy button and copy count -->
+ <script>
+  const copyButtons = document.querySelectorAll('.copy-btn');
+  const copyCountDisplay = document.getElementById('copy-count');
+  let copyCount = 0;
+
+  copyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.max-w-sm');
+      const hotlineText = card.querySelector('.hotline-number').textContent;
+
+      // Copy to clipboard
+      navigator.clipboard.writeText(hotlineText).then(() => {
+        // Show alert
+        alert(`Hotline number ${hotlineText} copied to clipboard`);
+
+        // Update copy count
+        copyCount++;
+        copyCountDisplay.textContent = copyCount;
+      }).catch(err => {
+        alert("Failed to copy number");
+        console.error(err);
+      });
+    });
+  });
+</script>
 
 
 
 </body>
+
+
+
+
 </html>
