@@ -64,7 +64,7 @@
      <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!--Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -110,7 +110,7 @@
      <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!--  Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -154,7 +154,7 @@
      <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!-- Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -197,7 +197,7 @@
 </div>
 <div class="md:row-span-3 order-7 md:order-none">
     <section class="mt-1 bg-white w-full p-4 shadow-md rounded-md max-w-sm mx-auto">
-  <!-- Header Row -->
+  
   <div  class="flex items-center justify-between mb-4">
     <!-- Title with Icon -->
     <div  class="flex items-center space-x-2">
@@ -214,16 +214,12 @@
   </div>
 
 </section>
-<!-- <section  class="mt-2 bg-white w-full p-4 shadow-md rounded-md max-w-sm mx-auto">
-  
 
-
-</section> -->
 </div>
      <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!--Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -267,7 +263,7 @@
      <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!--  Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -311,7 +307,7 @@
      <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!--  Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -321,7 +317,7 @@
         <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
-    <!-- Text Info -->
+    
     
   </div>
   
@@ -355,7 +351,7 @@
  <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!--  Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -365,7 +361,7 @@
         <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
-    <!-- Text Info -->
+    
     
   </div>
   
@@ -399,7 +395,7 @@
  <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!--  Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -409,7 +405,7 @@
         <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
-    <!-- Text Info -->
+   
     
   </div>
   
@@ -443,7 +439,7 @@
  <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
-    <!-- 💗 Icon -->
+    <!--  Icon -->
     <div class="flex items-center space-x-[250px]">
         
 
@@ -453,7 +449,7 @@
         <i class="fa-regular fa-heart text-xl text-gray-500 hover:text-pink-500 transition"></i>
     </div>
 
-    <!-- Text Info -->
+    
     
   </div>
   
@@ -489,10 +485,10 @@
 </section>
 <!-- heart count -->
 <script>
-  // Get the heart count display
+  
   const heartCountDisplay = document.getElementById('heart-count');
 
-  // Get all heart buttons
+  
   const heartButtons = document.querySelectorAll('.heart-btn');
 
   let heartCount = 0;
@@ -502,10 +498,10 @@
       heartCount++;
       heartCountDisplay.textContent = heartCount;
 
-      // Mark as liked
+      
       btn.classList.add('liked');
 
-      // Optional: change icon style
+    
       const icon = btn.querySelector('i');
       icon.classList.remove('fa-regular');
       icon.classList.add('fa-solid', 'text-pink-500');
@@ -523,26 +519,26 @@
 
   callButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Get service info from the card
+      
       const card = button.closest('.max-w-sm');
       const serviceName = card.querySelector('h3').textContent;
       const serviceNumber = card.querySelector('p.text-2xl').textContent;
 
-      // Check coin balance
+      
       if (coins < 20) {
         alert("You don't have enough coins to make a call.");
         return;
       }
 
-      // Deduct coins and update display
+     
       coins -= 20;
       coinDisplay.textContent = coins;
 
-      // Show alert
+     
       alert(`Calling ${serviceName} at ${serviceNumber}`);
 
-      // Add to call history
-      const time = new Date().toLocaleTimeString();
+      
+      const time = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric',second: 'numeric', hour12: true });
       const entry = document.createElement('li');
       entry.className = 'list-none'; 
       entry.innerHTML = `
@@ -565,7 +561,7 @@
 
 
 
-<!-- call history clear  -->
+
 
 <!-- copy button and copy count -->
  <script>
@@ -578,12 +574,12 @@
       const card = button.closest('.max-w-sm');
       const hotlineText = card.querySelector('.hotline-number').textContent;
 
-      // Copy to clipboard
+      
       navigator.clipboard.writeText(hotlineText).then(() => {
-        // Show alert
+      
         alert(`Hotline number ${hotlineText} copied to clipboard`);
 
-        // Update copy count
+       
         copyCount++;
         copyCountDisplay.textContent = copyCount;
       }).catch(err => {
@@ -600,7 +596,7 @@ const clearHistoryBtn = document.querySelector('.clear-history-btn');
 const historyListed = document.querySelector('.history-listed');
 
 clearHistoryBtn.addEventListener('click', () => {
-  historyListed.innerHTML = ''; // Clears all call history entries
+  historyListed.innerHTML = ''; 
 });
 
 </script>
