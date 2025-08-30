@@ -13,7 +13,7 @@ Ans: To create and insert a new element into the DOM using JavaScript, you follo
 
 3. What is Event Bubbling and how does it work?
 
-Ans: Event bubbling is a concept in the DOM event system where an event triggered on a nested element first runs its handler, then "bubbles up" to its parent elements, triggering their handlers in turn. For example, if you click a button inside a <div>, the click event first fires on the button, then on the <div>, and continues upward through the DOM tree until it reaches the root (document). This allows parent elements to respond to events from their children without needing to attach listeners to every child individually. You can control bubbling using event.stopPropagation() to prevent the event from moving up the tree. It's a powerful mechanism for efficient event handling and delegation.
+Ans: Event bubbling is a concept in the DOM event system where an event triggered on a nested element first runs its handler, then "bubbles up" to its parent elements, triggering their handlers in turn. For example, if you click a button inside a div tag, the click event first fires on the button, then on the div tag, and continues upward through the DOM tree until it reaches the root (document). This allows parent elements to respond to events from their children without needing to attach listeners to every child individually. You can control bubbling using event.stopPropagation() to prevent the event from moving up the tree. It's a powerful mechanism for efficient event handling and delegation.
 
 
 
