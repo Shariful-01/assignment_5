@@ -60,8 +60,8 @@
 </section>
 
 <!-- card section -->
-<section class="m-4 grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4">
-     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+<section class="m-4 grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 bg-[#f4f5f7]">
+     <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
     <!-- 💗 Icon -->
@@ -103,11 +103,11 @@
     </button>
     <button class="call-btn flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
       <i class="fa-solid fa-phone"></i>
-      <span>Call</span>
+      <span >Call</span>
     </button>
   </div>
 </div>
-     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+     <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
     <!-- 💗 Icon -->
@@ -145,13 +145,13 @@
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
-    <button class="flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
+    <button class="call-btn flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
       <i class="fa-solid fa-phone"></i>
-      <span>Call</span>
+      <span class="time-label">Call</span>
     </button>
   </div>
 </div>
-     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+     <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
     <!-- 💗 Icon -->
@@ -184,21 +184,21 @@
   </div>
 
   <!-- Buttons -->
-  <div class="flex justify-between items-center px-4 py-3 border-t border-gray-100">
+  <div class="flex justify-between items-center px-4 pt-3 pb-1 border-t border-gray-100">
     <button class="copy-btn flex items-center space-x-1 text-sm text-gray-700 hover:text-blue-600 border border-gray-500 px-3 py-1 rounded">
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
-    <button class="flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
+    <button class="call-btn flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
       <i class="fa-solid fa-phone"></i>
-      <span>Call</span>
+      <span class="time-label">Call</span>
     </button>
   </div>
 </div>
 <div class="md:row-span-2 order-7 md:order-none">
     <section class="mt-1 bg-white w-full p-4 shadow-md rounded-md max-w-sm mx-auto">
   <!-- Header Row -->
-  <div class="flex items-center justify-between mb-4">
+  <div  class="flex items-center justify-between mb-4">
     <!-- Title with Icon -->
     <div  class="flex items-center space-x-2">
       <i class="fa-solid fa-clock"></i>
@@ -206,26 +206,21 @@
     </div>
 
     <!-- Clear Button -->
-    <button class="text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded flex items-center space-x-1">
+    <button class="clear-history-btn text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded flex items-center space-x-1">
       <span>Clear</span>
     </button>
   </div>
-</section>
-<section class="mt-2 bg-white w-full p-4 shadow-md rounded-md max-w-sm mx-auto">
-  <!-- History Items (Add dynamically below this) -->
-  <div class="flex justify-between items-center py-2">
-  <div id="call-history">
-    <p class="font-medium">serviceName</p>
-    <p id="history-list" class="text-xs text-gray-500">serviceNumber</p>
+    <div  id="history-list" class="history-listed">
   </div>
-  <div>
-    <p class="text-xs text-gray-500">time</p>
-  </div>
-</div>
 
 </section>
+<!-- <section  class="mt-2 bg-white w-full p-4 shadow-md rounded-md max-w-sm mx-auto">
+  
+
+
+</section> -->
 </div>
-     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+     <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
     <!-- 💗 Icon -->
@@ -263,13 +258,13 @@
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
-    <button class="flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
+    <button class="call-btn flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
       <i class="fa-solid fa-phone"></i>
-      <span>Call</span>
+      <span class="time-label">Call</span>
     </button>
   </div>
 </div>
-     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+     <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
     <!-- 💗 Icon -->
@@ -307,13 +302,13 @@
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
-    <button class="flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
+    <button class="call-btn flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
       <i class="fa-solid fa-phone"></i>
-      <span>Call</span>
+      <span class="time-label">Call</span>
     </button>
   </div>
 </div>
-     <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+     <div class=" max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
   <!-- Top Section -->
   <div class="flex flex-col items-center p-4 space-x-3">
     <!-- 💗 Icon -->
@@ -351,9 +346,9 @@
       <i class="fa-solid fa-copy"></i>
       <span>Copy</span>
     </button>
-    <button class="flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
+    <button class="call-btn flex items-center space-x-1 text-sm text-white bg-green-500 hover:bg-green-600 px-3 py-1 rounded">
       <i class="fa-solid fa-phone"></i>
-      <span>Call</span>
+      <span class="time-label">Call</span>
     </button>
   </div>
 </div>
@@ -417,7 +412,20 @@
       // Add to call history
       const time = new Date().toLocaleTimeString();
       const entry = document.createElement('li');
-      entry.textContent = `${serviceName} (${serviceNumber}) at ${time}`;
+      entry.className = 'list-none'; 
+      entry.innerHTML = `
+        <div  class="flex justify-between items-center py-2">
+  <div id="call-history">
+    <p class="font-medium">${serviceName}</p>
+    <p  class="text-xs text-gray-500">${serviceNumber}</p>
+  </div>
+  <div>
+    <p class=" text-xs text-gray-500">${time}</p>
+  </div>
+</div>
+      
+      
+      `;
       historyList.prepend(entry);
     });
   });
@@ -453,6 +461,20 @@
     });
   });
 </script>
+
+<!-- clear history button -->
+<script>
+const clearHistoryBtn = document.querySelector('.clear-history-btn');
+const historyListed = document.querySelector('.history-listed');
+
+clearHistoryBtn.addEventListener('click', () => {
+  historyListed.innerHTML = ''; // Clears all call history entries
+});
+
+</script>
+
+<script src="script.js"></script>
+
 
 
 
